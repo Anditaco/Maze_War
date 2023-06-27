@@ -1,0 +1,165 @@
+html{
+  height: 100%;
+
+  font-family: 'Bungee', cursive;
+}
+
+body {
+  height:100%;
+  overflow: hidden;
+
+  padding: 0px;
+  margin-top: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #dbdbdb;
+}
+
+
+#home {
+  height:60%;
+
+  display: flex;
+
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logistics{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#nameField{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nameInput{
+  font-family: 'Bungee', cursive;
+  text-align: center;
+
+}
+
+#goButton{
+  font-family: 'Bungee', cursive;
+}
+
+#modules {
+  display: none;
+  /*display: flex;*/
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+
+  outline: black;
+  outline-style: solid;
+  outline-width: 2px;
+
+  background-color: white;
+}
+
+#row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#scoreTable{
+  padding: 0px;
+}
+#scoreTable tr{
+  padding: 0px;
+}
+#scoreTable td{
+  padding: 0px;
+}
+#scoreTable th{
+  padding: 0px;
+}
+
+#output {
+  outline: black;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+#outputDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#scoreDiv{
+  outline: black;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+#row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#output {
+  position: relative;
+  overflow: hidden;
+}
+
+#outputText {
+  position: absolute;
+  bottom: 0;
+}
+
+#about {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+#backButton{
+  font-family: 'Bungee', cursive;
+}
+
+#returnB{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+#instructions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+a {
+  color: black;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze War</title>
+    <script src="javascripts/jquery-3.3.1.min.js"></script>
+    <script src="javascripts/client.js"></script>
+    <script src="javascripts/resizeHandler.js"></script>
+    <script src="javascripts/viewHandler.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body onresize="handleResize()">
+    <div id="home">
+        <div id="logo">
+            <div id="mainLogo">Maze War</div>
+            <div id="subLogo">A Re-creation by Colin Christian</div>
+        </div>
+        <div id="logistics">
+            <div id="nameField">
+                <div id="namePrompt">Name:</div>
+                <input id="nameInput" type='text' maxlength="8" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" type="text">
+            </div>
+            <div id="enter">
+                <button id="goButton" type="button" onclick="switchToGame($('#nameInput').val())" disabled>Go!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modules">
+        <div id="row1">
+            <div id="scoreDiv" width="300" height="450">
+                <table id="scoreTable" width="300"></table>
+            </div>
+
+            <canvas id="mazeView" width="1200" height="900"></canvas>
+
+            <canvas id="mazeOverhead" width="300" height="450"></canvas>
+
+        </div>
+        <div id="row2">
+            <div id="instructions">
+                w / up - move forwards<br>
+                a / left - turn left<br>
+                d / right - turn right<br>
+                space - shoot
+            </div>
+            <div id="outputDiv">
+                <div id="output" width="900" height="225">
+                    <div id="outputText"></div>
+                </div>
+            </div>
+            <div id="returnB">
+                <button id="backButton" onclick="returnToMenu()">Return to Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        Original game created by Steve Colley and Greg Thompson, 1973<br>
+        Font "Bungee" from <a href="https://fonts.google.com/">Google Fonts</a><br>
+        Created with Node.js
+    </div>
+</body>
+</html>
